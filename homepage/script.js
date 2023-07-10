@@ -23,4 +23,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
     handleClick(serviceItems);
     handleClick(approachStep);
+
+    // Testimonials Carousel
+    const testimonialsSlides = document.getElementsByClassName('testimonials__slide');
+
+    let testimonialsCarousel = new Splide('.testimonials__carousel', {
+        type: 'fade',
+        autoplay: true,
+        pauseOnHover: true,
+        interval: 6000,
+        speed: 300,
+        rewind: true,
+        pagination: true,
+        arrows: false,
+        label: 'Testimonials Carousel',
+        classes: {
+            // Add classes for pagination.
+            pagination: 'splide__pagination testimonials__pagination', // container
+            page: 'splide__pagination__page testimonials__pagination__page', // each button
+        }
+    });
+
+    testimonialsCarousel.mount();
+
+    if (testimonialsSlides.length === 1) {
+        document.getElementsByClassName('testimonials__pagination').style.visibility = "hidden";
+    }
 });
