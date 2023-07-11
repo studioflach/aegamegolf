@@ -1,5 +1,5 @@
-body.nav-open {
-    overflow: hidden;
+html.nav-open {
+    overflow-y: hidden;
 }
 
 a {
@@ -44,6 +44,7 @@ healcode-widget[data-type="account-link"] {
 .location__info--map,
 .price__item--link__text,
 .price__price {
+    mask-image: none;
     -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
