@@ -47,6 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
     testimonialsCarousel.mount();
 
     if (testimonialsSlides.length === 1) {
-        document.getElementsByClassName('testimonials__pagination').style.visibility = "hidden";
+        document.getElementsByClassName('testimonials__pagination')[0].style.visibility = "hidden";
     }
 });
