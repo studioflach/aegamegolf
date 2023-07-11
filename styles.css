@@ -2,6 +2,12 @@ html.nav-open,
 html.nav-open body {
     overflow-y: hidden;
     height: 100vh;
+    min-height: 0px;
+}
+
+html.nav-open nav {
+    position: sticky;
+    top: 0;
 }
 
 a {
@@ -17,6 +23,15 @@ a {
 
 .hero__container {
     isolation: isolate;
+}
+
+.hero__title {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
 healcode-widget[data-type="account-link"] {
