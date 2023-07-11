@@ -10,6 +10,10 @@ html.nav-open nav {
     top: 0;
 }
 
+html.nav-open .promotion {
+    max-height: 0;
+  }
+
 a {
     color: inherit;
 }
