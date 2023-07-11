@@ -8,10 +8,10 @@ Webflow.push(function () {
     const hamburguer = document.querySelector('.nav__list--hamburger');
 
     hamburguer.addEventListener('click', () => {
-        if (document.body.classList.contains('nav-open')) {
-            document.body.classList.remove('nav-open');
+        if (document.documentElement.classList.contains('nav-open')) {
+            document.documentElement.classList.remove('nav-open');
         } else {
-            document.body.classList.add('nav-open');
+            document.documentElement.classList.add('nav-open');
         }
     });
 
